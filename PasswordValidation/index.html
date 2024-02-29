@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Password Validation Form</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h4 class="title">Register Now</h4>
+  <form>
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password" required>
+    <button class="btn">Register</button>
+  </form>
+</div>
+
+<div id="message">
+  <h3>Password must contain the following:</h3>
+  <p id="letter">Lowercase letter: <span class="invalid">&#x2718;</span></p>
+  <p id="capital">Uppercase letter: <span class="invalid">&#x2718;</span></p>
+  <p id="number">Number: <span class="invalid">&#x2718;</span></p>
+  <p id="length">Minimum 8 characters: <span class="invalid">&#x2718;</span></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
