@@ -1,0 +1,21 @@
+
+  /* CSS styles for the webpage */
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0; /* Default light background */
+    color: #333; /* Default dark text color */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for theme change */
+  }
+  .dark {
+    background-color: #333; /* Dark background */
+    color: #f0f0f0; /* Light text color */
+  }
+  h1 {
+    margin-top: 50px;
+  }
+  button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
