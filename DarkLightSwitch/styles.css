@@ -1,0 +1,61 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  transition: background-color 0.3s ease-in-out; /* Smooth transition */
+}
+
+.dark-mode {
+  background-color: #333; /* Dark mode background color */
+}
+
+.light-mode {
+  background-color: #f0f0f0; /* Light mode background color */
+}
+
+.mode-switch {
+  position: relative;
+  width: 50px;
+  height: 25px;
+}
+
+.checkbox {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.label {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc; /* Light mode switch background color */
+  border-radius: 25px;
+  transition: background-color 0.3s ease-in-out; /* Smooth transition */
+}
+
+.checkbox:checked + .label {
+  background-color: #333; /* Dark mode switch background color */
+}
+
+.label::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff; /* White circle */
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5px; /* Initial position */
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.checkbox:checked + .label::after {
+  transform: translateX(24px) translateY(-50%); /* Move to the right when checked */
+}

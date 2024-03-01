@@ -1,0 +1,35 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: lightgreen;
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-bar {
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #333;
+  outline: none;
+  background-color: #fff;
+}
+
+.search-bar:focus {
+  animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 20px #333;
+  }
+  100% {
+    box-shadow: 0 0 50px blue;
+  }
+}
