@@ -1,0 +1,47 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  min-height: 100vh;
+}
+
+.quote-wrapper .quote-item{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 2px solid red;
+  padding: 20px;
+  background-color: rgb(206,126,255);
+}
+
+.refresh-btn{
+  padding: 12px 20px;
+  background-color: yellow;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.loader{
+  font-size: 30px;
+  font-weight: bolder;
+  display: none;
+}
+
+.loader .show{
+  display: block;
+}
+
+.quote-wrapper .hide{
+  display: none;
+}
