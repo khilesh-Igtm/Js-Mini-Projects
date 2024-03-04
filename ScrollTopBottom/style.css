@@ -1,0 +1,11 @@
+.loader {
+  display: none;
+}
+
+.loader.show-loader {
+  display: block;
+}
+
+.users-list.hide-user-list {
+  display: none;
+}

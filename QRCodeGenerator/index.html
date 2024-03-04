@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>QR Code Generator</h1>
+
+  <input type="text" class="qr-text" placeholder="Type Text and Use URL" id="">
+
+  <div class="qr-container"></div>
+  <p class="error-message"></p>
+  <button class="qr-btn">Generate QR Code</button>
+
+
+  <script src="script.js"></script>
+
+  <!-- basically this script link is for genearting QR code, It's a 3rd party library package for getting QR codes  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
