@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center; /* Center aligning content */
+}
+
+.input-container {
+  display: flex;
+  justify-content: center; /* Center aligning child elements */
+  margin-bottom: 20px;
+}
+
+.search {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-btn {
+  padding: 10px 20px;
+  background-color: #0366d6;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: #0056b3;
+}
+
+.github-profile-details {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.username {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.repos,
+.followers,
+.following {
+  margin-bottom: 5px;
+}
+
+.loading-text {
+  display: none;
+}
+
+/* for showing loading text we use display as block */
+.loading-text.show {
+  display: block;
+}
+
+.github-profile-details.hide {
+  display: none;
+}
